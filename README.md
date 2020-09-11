@@ -1,4 +1,4 @@
-# globusoft_assignment
+# Globussoft_assignment
 # Home Automation App Using Node JS, Express JS, MongoDB, Handlebars.
 
 [] Installation Lib/Dependancies :
@@ -11,7 +11,7 @@
 
 [] URL To watch out for:
 
-http://localhost:9654/device
+http://localhost:9654/devicess
 
 [] Require tools 
 
@@ -23,3 +23,13 @@ http://localhost:9654/device
 [] Code Modification: 
 
   1. Text Editor (Visual Studio Code / Any)
+
+  [] Code References:
+
+  https://www.npmjs.com/
+  https://stackoverflow.com/
+  https://expressjs.com/
+  https://mongoosejs.com/
+  https://handlebarsjs.com/
+
+  etc. 

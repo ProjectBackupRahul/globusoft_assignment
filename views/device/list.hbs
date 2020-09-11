@@ -1,0 +1,26 @@
+<h3><a class="btn btn-secondary" href="/device"><i class="fa fa-plus"></i> Create New</a> Device List</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Device Name</th>
+            <th>MAC Address</th>
+            <th>Manufacturer</th>
+            <th>Model No</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.deviceName}}</td>
+            <td>{{this.macAddress}}</td>
+            <td>{{this.manufacturer}}</td>
+            <td>{{this.modelNo}}</td>
+            <td>
+                <a href="/device/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a href="/device/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

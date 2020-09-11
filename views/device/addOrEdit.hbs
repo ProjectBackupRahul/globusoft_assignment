@@ -1,0 +1,31 @@
+<h3>{{viewTitle}}</h3>
+
+<form action="/device" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="{{device._id}}">
+    <div class="form-group">
+        <label>Device Name</label>
+        <input type="text" class="form-control" name="deviceName" placeholder="Device Name" value="{{device.deviceName}}">
+        <div class="text-danger">
+            {{device.deviceNameError}}</div>
+    </div>
+    <div class="form-group">
+        <label>Device Addess (MAC)</label>
+        <input type="text" class="form-control" name="macAddress" placeholder="MAC Address" value="{{device.email}}">
+        <div class="text-danger">
+            {{device.emailError}}</div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Manufacturer</label>
+            <input type="text" class="form-control" name="manufacturer" placeholder="Manufacturer" value="{{device.manufacturer}}">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Model No</label>
+            <input type="text" class="form-control" name="modelNo" placeholder="Model No" value="{{device.No}}">
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Add Device</button>
+        <a class="btn btn-secondary" href="/device/list"><i class="fa fa-list-alt"></i> View Device List</a>
+    </div>
+</form>
